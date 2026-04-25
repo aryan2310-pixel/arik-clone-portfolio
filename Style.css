@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #d3bfa2;
+}
+
+main {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+main .hero-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main .hero-section img {
+  width: 57%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-section h1 {
+  font-size: clamp(2.5rem, 2vw, 3rem);
+  text-align: center;
+}
+main .hero-section p {
+  word-wrap: break-word;
+  font-size: clamp(1.2rem, 4.7vw, 1.3rem);
+  text-align: center;
+}
+main .hero-section a {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: #d3bfa2;
+}
+main .hero-section a .icon {
+  aspect-ratio: 1/1;
+  width: 2.5rem;
+  border: #d3bfa2 solid 2px;
+  border-radius: 50%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+main .hero-section a .icon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 2rem;
+}
+main .marque-section {
+  margin-top: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+main .marque-section .marque-container {
+  display: flex;
+  width: 100%;
+  animation: marque 7s linear infinite;
+}
+main .marque-section .marque-container div {
+  padding: 1rem;
+}
+main .marque-section .marque-container div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 3rem;
+}
+@media (min-width: 1020px) {
+  main .hero-section img {
+    width: 37%;
+  }
+  main .hero-section h1 {
+    font-size: clamp(7rem, 8vw, 10rem);
+  }
+  main .hero-section p {
+    width: 60%;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+  }
+}
+
+@keyframes marque {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #0e0e0e;
+    color: #d3bfa2;
+}
+
+main{
+    padding: 0 1.5rem;
+    width: 100%;
+    .hero-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 57%;
+            object-fit: cover;
+            
+        }
+        h1{
+            font-size: clamp(2.5rem,2vw,3rem);
+            text-align: center;
+        }
+        p{
+            word-wrap: break-word;
+            font-size: clamp(1.2rem, 4.7vw, 1.3rem);
+            text-align: center;
+        }
+        a{
+            display: flex;
+            font-size: 1.5rem;
+            gap: 1rem;
+            align-items: center;
+            text-decoration: none;
+            color: #d3bfa2;
+            .icon{
+                aspect-ratio: 1/1;
+                width: 2.5rem;
+                border: #d3bfa2 solid 2px;
+                border-radius: 50%;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+
+                img{
+                    object-fit: cover;
+                    width: 2rem;
+                }
+            }
+        }
+       
+    }
+
+    .marque-section{
+        margin-top: 1.5rem;
+        width: 100%;
+        overflow: hidden;
+        .marque-container{
+            display: flex;
+            width: 100%;
+            animation: marque 7s linear  infinite  ;
+            div{
+                // width: 5rem;
+                padding: 1rem;
+                img{
+                    object-fit: cover;
+                    width: 3rem;
+                }
+            };
+        }
+    }
+
+    @media (min-width: 1020px){
+    .hero-section{
+        img{
+            width: 37%;
+            // aspect-ratio: 1/1;
+        }
+        h1{
+            font-size: clamp(7rem,8vw,10rem);
+        }
+        p{
+            width: 60%;
+            font-size: clamp(1.7rem,3vw,2.5rem);
+            
+        }
+    }
+}
+
+}
+
+
+@keyframes marque{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
