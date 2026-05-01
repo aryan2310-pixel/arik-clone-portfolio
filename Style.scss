@@ -8,6 +8,7 @@ html,body{
     width: 100%;
     background-color: #0e0e0e;
     color: #d3bfa2;
+    overflow-x: hidden;
 }
 
 main{
@@ -46,7 +47,7 @@ main{
                 border: #d3bfa2 solid 2px;
                 border-radius: 50%;
                 display: flex;
-                justify-items: center;
+                justify-content: center;
                 align-items: center;
 
                 img{
@@ -64,10 +65,11 @@ main{
         overflow: hidden;
         .marque-container{
             display: flex;
-            width: 100%;
+            width: fit-content;
             animation: marque 7s linear  infinite  ;
             div{
                 // width: 5rem;
+                flex-shrink: 0;
                 padding: 1rem;
                 img{
                     object-fit: cover;
