@@ -62,15 +62,16 @@ main{
     .marque-section{
         margin-top: 1.5rem;
         width: 100%;
+        width: 100%;
         overflow: hidden;
         .marque-container{
             display: flex;
-            width: fit-content;
+            width: max-content;
             animation: marque 7s linear  infinite  ;
             div{
                 // width: 5rem;
                 flex-shrink: 0;
-                padding: 1rem;
+                padding: 1rem 6vw;
                 img{
                     object-fit: cover;
                     width: 3rem;

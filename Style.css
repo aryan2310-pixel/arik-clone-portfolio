@@ -62,17 +62,18 @@ main .hero-section a .icon img {
 main .marque-section {
   margin-top: 1.5rem;
   width: 100%;
+  width: 100%;
   overflow: hidden;
 }
 main .marque-section .marque-container {
   display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   animation: marque 7s linear infinite;
 }
 main .marque-section .marque-container div {
   flex-shrink: 0;
-  padding: 1rem;
+  padding: 1rem 6vw;
 }
 main .marque-section .marque-container div img {
   -o-object-fit: cover;
